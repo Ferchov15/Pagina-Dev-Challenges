@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Proyectos</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="overlay">
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <h1>Propuesta Dev Challenges</h1>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="form-section">
+      <h2>Registro de Estudiante y Proyecto</h2>
+      <form action="registro_exito.html" method="GET" onsubmit="return validarFormulario(event)">
+        <label>Nombre del Estudiante:
+          <input type="text" name="estudiante" required />
+        </label>
+        <label>Correo Electrónico:
+          <input type="email" name="correo" required />
+        </label>
+        <label>Nombre del Proyecto:
+          <input type="text" name="proyecto" required />
+        </label>
+        <label>Descripción del Proyecto:
+          <textarea name="descripcion" required></textarea>
+        </label>
+        <button type="submit" class="btn-forms">Registrar Proyecto</button>
+      </form>
+    </section>
+
+    <section class="buttons-section">
+      <a href="index.html" class="btn-ediciones">Volver a Página Principal</a>
+    </section>
+  </main>
+
+  <script>
+    function validarFormulario(e) {
+      const form = e.target;
+      const campos = form.querySelectorAll("input, textarea");
+      for (let campo of campos) {
+        if (!campo.value.trim()) {
+          window.location.href = "registro_error.html";
+          return false;
+        }
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
