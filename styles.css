@@ -6,7 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgba(49, 97, 136, 0.747);
+    background-color: rgba(49, 97, 136, 0.767);
+    background-image: url("images/fondo.jpg");
 }
 
 
@@ -67,6 +68,7 @@ body {
 
 .info-section {
     display: flex;
+    color : white;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -142,11 +144,11 @@ body {
 }
 
 .btn-noticias {
-    background-color: #21e71a;
+    background-color: #8b134b;
     color: #222;
 }
 .btn-noticias:hover {
-    background-color: #287a0f;
+    background-color: #cc15dd;
 }
 
 /* Apartado de visualizacion del link */
@@ -154,7 +156,7 @@ body {
     text-align: center;
     font-size: 0.95em;
     margin-top: 20px;
-    color: #333;
+    color: #ffffff;
 }
 
 .links-section a {
@@ -224,18 +226,20 @@ body {
     padding: 40px 20px;
     max-width: 600px;
     margin: auto;
+    color:rgb(250, 249, 249);
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    color: rgb(255, 255, 255);
 }
 
 input, textarea {
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #d817ce;
     font-size: 1em;
 }
 
@@ -257,8 +261,8 @@ textarea {
 
 /* Apartado de visualizacion del boton de registro */
 .btn-forms {
-    background-color: #5352b8;
-    color: white;
+    background-color: #14129b;
+    color: rgb(253, 252, 252);
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
@@ -271,5 +275,5 @@ textarea {
 }
 
 .btn-forms:hover {
-    background-color: #4e0a5c;
+    background-color: #4a0957;
 }
